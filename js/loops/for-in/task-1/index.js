@@ -4,3 +4,10 @@
 
 var obj = {green: 'зеленый', red: 'красный', blue: 'голубой'}
  */
+let obj = {green: 'зеленый', red: 'красный', blue: 'голубой'};
+
+for (let key in obj){
+    alert(key);
+    alert(obj[key]);
+}
+
