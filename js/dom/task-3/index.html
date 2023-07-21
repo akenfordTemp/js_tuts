@@ -15,6 +15,16 @@
 <div class="block2">
     <div></div>
 </div>
+<script>
+
+    const firstBlock = document.querySelector('.block1');
+    const secondBlock = document.querySelector('.block2');
+
+    if (firstBlock.childElementCount === 0) {
+        secondBlock.style.display = 'block';
+    }
+
+</script>
 </body>
 
 <style>
