@@ -2,12 +2,13 @@
 /*<div>
     Привет, <span style="font-size:150%">Лена</span>
 </div>*/
-const newElement  = document.createElement('div');
-newElement.innerHTML = "<span style=\"font-size:150%\">Лена</span>";
-document.body.append(newElement);
+const divElement  = document.createElement('div');
+const textNode = document.createTextNode('Привет, ');
+const spanElement  = document.createElement('span');
+spanElement.setAttribute('style', 'font-size:150%');
+const nameNode = document.createTextNode('Лена');
+divElement.appendChild(textNode);
+spanElement.appendChild(nameNode);
+divElement.appendChild(spanElement);
+document.body.appendChild(divElement);
 
-
-const textNote = document.createTextNode('Привет, Лена');
-document.body.append(textNote);
-
-/* 2. Найти на странице все <b> и изменить их размер на 15px. Использовать getElementsByTagName, setAttribute */
