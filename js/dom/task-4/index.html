@@ -17,5 +17,13 @@
         <div id="id3" style="background: yellow;">id3</div>
     </div>
 </div>
+<script>
+    function handleClick(event){
+        const clickedElementId = event.target.id;
+        console.log(`Идентификатор кликнутого элемента: ${clickedElementId}`);
+    }
+    document.addEventListener("click", handleClick);
+
+</script>
 </body>
 </html>
