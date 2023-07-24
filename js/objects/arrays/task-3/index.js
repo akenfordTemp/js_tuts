@@ -7,3 +7,16 @@ var arr = [
 =>
 {width: 10, height: 20}
  */
+
+var arr = [
+    { name: 'width', value: 10 },
+    { name: 'height', value: 20 }
+];
+
+const keyValueObject = arr.reduce((result, obj) => {
+    result[obj.name] = obj.value;
+    return result;
+}, {});
+
+console.log(keyValueObject);
+
